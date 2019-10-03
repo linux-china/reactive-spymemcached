@@ -8,8 +8,8 @@
     <artifactId>reactive-spymemcached</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>reactor-spymemcached</name>
-    <description>Reactive spymemcached</description>
+    <name>reactive-spymemcached</name>
+    <description>Reactive spymemcached with Reactor support</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
