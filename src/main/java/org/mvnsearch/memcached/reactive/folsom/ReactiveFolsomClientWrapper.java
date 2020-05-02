@@ -4,7 +4,6 @@ import com.spotify.folsom.GetResult;
 import com.spotify.folsom.MemcacheClient;
 import com.spotify.folsom.MemcacheStatus;
 import com.spotify.folsom.MemcachedStats;
-import org.mvnsearch.memcached.reactive.ReactiveMemcachedClient;
 import reactor.core.publisher.Mono;
 
 import java.util.List;
@@ -15,10 +14,10 @@ import java.util.Map;
  *
  * @author linux_china
  */
-public class ReactiveMemcachedClientFolsomWrapper<V> implements ReactiveMemcachedClient<V> {
+public class ReactiveFolsomClientWrapper<V> implements ReactiveFolsomClient<V> {
     private MemcacheClient<V> rawClient;
 
-    public ReactiveMemcachedClientFolsomWrapper(MemcacheClient<V> rawClient) {
+    public ReactiveFolsomClientWrapper(MemcacheClient<V> rawClient) {
         this.rawClient = rawClient;
     }
 

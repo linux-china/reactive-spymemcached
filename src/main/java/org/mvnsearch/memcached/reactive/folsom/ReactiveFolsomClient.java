@@ -1,4 +1,4 @@
-package org.mvnsearch.memcached.reactive;
+package org.mvnsearch.memcached.reactive.folsom;
 
 import com.spotify.folsom.GetResult;
 import com.spotify.folsom.MemcacheStatus;
@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author linux_china
  */
-public interface ReactiveMemcachedClient<V> {
+public interface ReactiveFolsomClient<V> {
 
     Mono<MemcacheStatus> set(String key, V value, int ttl);
 
