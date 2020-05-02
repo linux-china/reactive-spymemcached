@@ -1,4 +1,4 @@
-package net.spy.reactor.spymemcached;
+package org.mvnsearch.memcached.reactive.folsom;
 
 import com.spotify.folsom.ConnectFuture;
 import com.spotify.folsom.MemcacheClient;
@@ -21,8 +21,7 @@ public class FolsomTest {
     public void setUp() throws Exception {
         client = MemcacheClientBuilder.newStringClient()
                 .withAddress("127.0.0.1")
-                .connectAscii();
-        // make we wait until the client has connected to the server
+                .connectBinary();
         ConnectFuture.connectFuture(client).toCompletableFuture().get();
     }
 
