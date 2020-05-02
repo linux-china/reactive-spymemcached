@@ -1,4 +1,4 @@
-package net.spy.reactor.spymemcached;
+package org.mvnsearch.memcached.reactive.spymemcached;
 
 import net.spy.memcached.AddrUtil;
 import net.spy.memcached.ConnectionFactoryBuilder;
