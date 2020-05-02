@@ -15,8 +15,8 @@ import reactor.core.publisher.Mono;
  * @author linux_china
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class ReactiveFolsomTest {
-    private ReactiveMemcachedClientFolsomWrapper<String> reactiveFolsomClient;
+public class ReactiveFolsomClientWrapperTest {
+    private ReactiveFolsomClientWrapper<String> reactiveFolsomClient;
 
     @BeforeAll
     public void setUp() throws Exception {
@@ -24,7 +24,7 @@ public class ReactiveFolsomTest {
                 .withAddress("127.0.0.1")
                 .connectBinary();
         ConnectFuture.connectFuture(folsomClient).toCompletableFuture().get();
-        reactiveFolsomClient = new ReactiveMemcachedClientFolsomWrapper<>(folsomClient);
+        reactiveFolsomClient = new ReactiveFolsomClientWrapper<>(folsomClient);
     }
 
     @AfterAll
