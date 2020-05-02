@@ -1,4 +1,4 @@
-package net.spy.reactor.spymemcached;
+package org.mvnsearch.memcached.reactive.spymemcached;
 
 import net.spy.memcached.MemcachedClient;
 import reactor.core.publisher.Flux;
