@@ -22,6 +22,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.spotify</groupId>
+            <artifactId>folsom</artifactId>
+        </dependency>
+        <dependency>
             <groupId>net.spy</groupId>
             <artifactId>spymemcached</artifactId>
             <version>${spymemcached.version}</version>
