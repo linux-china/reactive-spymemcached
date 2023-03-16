@@ -13,7 +13,7 @@ import java.util.Map;
  * @author linux_china
  */
 public class ReactiveMemcachedClient implements SpymemcachedAdapter {
-    private MemcachedClient memcachedClient;
+    private final MemcachedClient memcachedClient;
 
     public ReactiveMemcachedClient(MemcachedClient memcachedClient) {
         this.memcachedClient = memcachedClient;

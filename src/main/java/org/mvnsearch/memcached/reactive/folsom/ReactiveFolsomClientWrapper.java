@@ -15,7 +15,7 @@ import java.util.Map;
  * @author linux_china
  */
 public class ReactiveFolsomClientWrapper<V> implements ReactiveFolsomClient<V> {
-    private MemcacheClient<V> rawClient;
+    private final MemcacheClient<V> rawClient;
 
     public ReactiveFolsomClientWrapper(MemcacheClient<V> rawClient) {
         this.rawClient = rawClient;
